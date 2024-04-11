@@ -15,9 +15,20 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Widgets Types
+
+- visible (content)
+- invisibel (layouts)
+- built-in
+
 ## Steps
 
 ### Step 1
 
 - handle main
 - create splash
+
+### Step 2
+
+- splash design
+- splash widgets tree
