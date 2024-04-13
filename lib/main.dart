@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_proj/screens/home.dart';
+import 'package:get_proj/screens/lesson.dart';
 import 'package:get_proj/screens/onboarding.dart';
 import 'package:get_proj/screens/splash.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/', page: () => const Splash()),
         GetPage(name: '/onboard', page: () => const Onboarding()),
         GetPage(name: '/home', page: () => const Home()),
+        GetPage(name: '/lesson', page: () => const Lesson()),
       ],
     );
   }

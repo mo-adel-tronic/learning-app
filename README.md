@@ -32,3 +32,37 @@ samples, guidance on mobile development, and a full API reference.
 
 - splash design
 - splash widgets tree
+
+
+```dart
+Container singleLesson({required String image}) {
+    return Container(
+        decoration: BoxDecoration(
+          color: white,
+          borderRadius: BorderRadius.circular(10)
+        ),
+        padding: const EdgeInsets.all(20),
+        width: 200,
+        child: Column(
+          children: [
+            Image.asset(image),
+            const SizedBox(height: 20,),
+            const Text('لوحة المفاتيح', style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold
+            ),),
+            MaterialButton
+            (onPressed: (){
+              Get.toNamed('/lesson', arguments: {'txt': 'my text', 'icon': Icons.person});
+            },
+            color: mainColor,
+            textColor: white,
+            child: const Text('إضغط لدخول الدرس', style: TextStyle(
+              fontSize: 15
+            ),),
+            )
+          ],
+        ),
+      );
+  }
+  ```
